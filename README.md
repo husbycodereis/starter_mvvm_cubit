@@ -1,17 +1,19 @@
-# starter_mvvm_cubit
+# MVVM pattern project example with Cubit
 
-A new Flutter project.
+This project is a starter template that is built in MVVM architecture pattern for Flutter applications with BLoC / Cubit state management method.
 
-## Getting Started
+The core features and use cases inside the project:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# starter_mvvm_cubit
+* Caching / Sembast & SharedPreferences
+* Network management / Dio
+* Localization / Easy Localization
+* Theme 
+* Navigation
+* Unit Testing
+* BLoC State Management
+* Dependency Injection with Get_It and Singleton Instances
+* Dart extensions
+* Atomic Design
+* MVVM pattern principals
+* Splash Screen / Native & Widget
+* Responsive Layout
