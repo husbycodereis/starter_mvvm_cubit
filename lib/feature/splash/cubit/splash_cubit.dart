@@ -22,6 +22,6 @@ class SplashCubit extends Cubit<SplashState> with BaseCubit {
 
   Future<void> navigateToPages() async {
   
-    await navigation.navigateToPageClear(path: NavigationConstants.LOGIN_VIEW);
+    await navigation.navigateToPageClear(path: NavigationConstants.SAMPLE);
   }
 }

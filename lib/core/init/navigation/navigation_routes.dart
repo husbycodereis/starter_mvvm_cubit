@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:starter_mvvm_cubit/core/components/cards/not_found_navigation.dart';
+import 'package:starter_mvvm_cubit/feature/auth/view/forgot_password_view.dart';
+import 'package:starter_mvvm_cubit/feature/auth/view/login_view.dart';
+import 'package:starter_mvvm_cubit/feature/auth/view/register_view.dart';
 import 'package:starter_mvvm_cubit/feature/sample/view/sample_view.dart';
 
 import 'package:starter_mvvm_cubit/feature/splash/view/splash_view.dart';
@@ -12,13 +15,19 @@ class NavigationRoute {
 
   NavigationRoute._init();
 
+ 
   Route<dynamic> generateRoute(RouteSettings args) {
     switch (args.name) {
       case NavigationConstants.DEFAULT:
         return normalNavigate(const SplashView());
       case NavigationConstants.SAMPLE:
-        return normalNavigate(const SampleView());
+       return normalNavigate(const SampleView());
+      case NavigationConstants.LOGIN_VIEW:
+        return normalNavigate(const LoginView());
       case NavigationConstants.REGISTER:
+        return normalNavigate(const RegisterView());
+      case NavigationConstants.FORGOT_PASSWORD:
+        return normalNavigate(const ForgotPasswordView());
       default:
         return normalNavigate(const NotFoundNavigation());
     }

@@ -16,14 +16,14 @@ class AppThemeManager extends AppTheme {
   @override
   ThemeData get lightTheme => FlexThemeData.light(
         fontFamily: GoogleFonts.poppins().fontFamily,
-        scheme: FlexScheme.blueWhale,
+        scheme: FlexScheme.bahamaBlue,
         textTheme: TextThemeManager.instance.textTheme(),
       );
 
   @override
   ThemeData get darkTheme => FlexThemeData.dark(
         fontFamily: GoogleFonts.poppins().fontFamily,
-        scheme: FlexScheme.blueWhale,
+        scheme: FlexScheme.bahamaBlue,
         textTheme: TextThemeManager.instance.textTheme(),
       );
 }

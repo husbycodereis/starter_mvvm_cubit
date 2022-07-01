@@ -54,7 +54,7 @@ class SampleCubit extends Cubit<SampleState> with BaseCubit {
   }
 
   void navigate() async {
-    await navigation.navigateToPage(path: NavigationConstants.SAMPLE);
+    await navigation.navigateToPage(path: NavigationConstants.LOGIN_VIEW);
   }
 
   void showAlert() {
