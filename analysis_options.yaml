@@ -1,0 +1,12 @@
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+
+  rules:
+    avoid_print: false 
+    prefer_single_quotes: true 
+    library_private_types_in_public_api: false
+    constant_identifier_names: false
+    file_names: false
+    depend_on_referenced_packages: false

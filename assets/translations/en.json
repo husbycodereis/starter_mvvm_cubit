@@ -1,0 +1,21 @@
+{
+  "AUTH": {
+    "LOGIN_HELP": "Login using your e-mail and password",
+    "TO_LOGIN": "Til innritan.",
+    "LOGIN_WITH_FB": "Login using Facebook",
+    "LOGIN_WITH_EMAIL": "Login using e-mail",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "YOUR_PROFILE": "Profile",
+    "LOGIN_FAILED": "Fekk ikki innritað. Brúkarnavn ella loyniorð er ikki rætt",
+    "SIGN_UP": "sign-up",
+    "SIGNUP_EMAIL_SENT": "An e-mail to verifiy the registration has been sent to {Email}",
+    "INVALID_SIGNUP_LINK": "The link to verify the e-mail address is invalid or expired",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "CANCEL_FORGOT_PASSWORD": "Back to login",
+    "USER_EMAIL": "The e-mail address has already been registred",
+    "RESET_PASSWORD__EMAIL_SENT": "An e-mail with a link to reset the password has been sent to {Email}",
+    "SIGN_ME_UP": "Create new account",
+    "FB_LOGIN_ERROR": "Could not login using Facebook. Error message:\n"
+  }
+}
