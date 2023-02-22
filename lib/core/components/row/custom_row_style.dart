@@ -16,12 +16,12 @@ class TappableTextRow extends Row {
     required this.tappableText,
     required this.onTap,
   }) : super(key: key, mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text('$text ', style: context.textTheme.bodyText2),
+          Text('$text ', style: context.textTheme.bodyMedium),
           GestureDetector(
             onTap: onTap,
             child: Text(
               tappableText,
-              style: context.textTheme.bodyText2?.copyWith(color: context.appColors.tertiaryColor),
+              style: context.textTheme.bodyMedium?.copyWith(color: context.appColors.tertiaryColor),
             ),
           )
         ]);

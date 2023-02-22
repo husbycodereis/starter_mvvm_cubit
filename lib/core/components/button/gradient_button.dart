@@ -24,10 +24,10 @@ class GradientButton extends StatelessWidget {
       child: ElevatedButton(
           onPressed: onTap,
           style: ElevatedButton.styleFrom(
-              primary: Colors.transparent, onSurface: Colors.transparent, shadowColor: Colors.transparent),
+              backgroundColor: Colors.transparent, disabledBackgroundColor: Colors.transparent, shadowColor: Colors.transparent),
           child: Text(
             title,
-            style: context.textTheme.bodyText1?.copyWith(color: context.appColors.textColor),
+            style: context.textTheme.bodyLarge?.copyWith(color: context.appColors.textColor),
           )),
     );
   }

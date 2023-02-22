@@ -16,7 +16,7 @@ extension StringColorExtension on String {
 }
 
 extension AuthorizationExtension on String {
-  Map<String, dynamic> get bearer => {'Authorization': 'Bearer ${this}'};
+  Map<String, dynamic> get bearer => {'Authorization': 'Bearer $this'};
 }
 extension LocaleExtension on String {
   String get locale => this.tr();

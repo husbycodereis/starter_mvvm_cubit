@@ -13,8 +13,8 @@ class DioClient {
   }) {
     _dio = Dio()
       ..options.baseUrl = baseUrl
-      ..options.connectTimeout = HttpConfig.connectionTimeout
-      ..options.receiveTimeout = HttpConfig.receiveTimeout
+      ..options.connectTimeout = const Duration(milliseconds: HttpConfig.connectionTimeout)
+      ..options.receiveTimeout = const Duration(milliseconds: HttpConfig.receiveTimeout)
       ..interceptors.add(interceptorsWrapper ?? InterceptorsWrapper())
       ..interceptors.add(LogInterceptor(requestBody: true, responseBody: true));
   }

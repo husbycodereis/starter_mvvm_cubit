@@ -34,8 +34,8 @@ class ExtendableButton extends StatelessWidget {
       ),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: buttonColor,
-          onSurface: buttonColor,
+          backgroundColor: buttonColor,
+          disabledBackgroundColor: buttonColor,
           shadowColor: Colors.transparent,
           side: BorderSide(
             width: borderWidth ?? 0.0,

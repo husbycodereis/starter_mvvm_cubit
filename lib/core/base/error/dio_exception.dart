@@ -10,16 +10,16 @@ class DioException implements Exception {
       case DioErrorType.cancel:
         message = 'Request to API server was cancelled';
         break;
-      case DioErrorType.connectTimeout:
+      case DioErrorType.connectionTimeout:
         message = 'Connection timeout with server. Please check your internet-connection.';
         break;
-      case DioErrorType.other:
+      case DioErrorType.unknown:
         message = 'Connection to API server failed due to internet connection';
         break;
       case DioErrorType.receiveTimeout:
         message = 'Receive timeout in connection with API server';
         break;
-      case DioErrorType.response:
+      case DioErrorType.badResponse:
         final Map<String, dynamic> errorRes = jsonDecode('${dioError.response}') as Map<String, dynamic>;
         _errorResponse = ErrorResponse.fromJson(errorRes);
         message = _handleError(_errorResponse?.status ?? 400);

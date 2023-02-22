@@ -31,11 +31,11 @@ class SampleView extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: cubit.navigate,
-                    child: Text(LocaleKeys.AUTH_LOGIN.locale, style: context.textTheme.bodyText1)),
+                    child: Text(LocaleKeys.AUTH_LOGIN.locale, style: context.textTheme.bodyLarge)),
                 TextButton(
                     style: TextButton.styleFrom(backgroundColor: context.theme.primaryColor),
                     onPressed: cubit.getFakeApi,
-                    child: Text('Fetch Fake API', style: context.textTheme.bodyText1)),
+                    child: Text('Fetch Fake API', style: context.textTheme.bodyLarge)),
                 BlocBuilder<SampleCubit, SampleState>(
                   builder: (context, state) {
                     return ListView.builder(

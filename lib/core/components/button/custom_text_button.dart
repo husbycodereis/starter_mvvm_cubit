@@ -17,7 +17,7 @@ class ColoredTextButton extends StatelessWidget {
         onTap: onText,
         child: Text(
           valueText,
-          style: context.textTheme.bodyText2?.copyWith(color: context.appColors.tertiaryColor),
+          style: context.textTheme.bodyMedium?.copyWith(color: context.appColors.tertiaryColor),
         ));
   }
 }
